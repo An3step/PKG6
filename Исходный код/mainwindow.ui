@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="letter" name="widget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton_10">
+          <property name="text">
+           <string>Выбрать цвет буквы</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_9">
+          <property name="text">
+           <string>Сброс буквы</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Проекция</string>
+    </property>
+    <addaction name="action_Oxy"/>
+    <addaction name="action_Oyz"/>
+    <addaction name="action_Oxz"/>
+    <addaction name="No_proection"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Масштаб</string>
+    </property>
+    <addaction name="scaling"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Поворот</string>
+    </property>
+    <addaction name="rotating"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Перемещение</string>
+    </property>
+    <addaction name="transfering"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>Матрица</string>
+    </property>
+    <addaction name="Matrix"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>Информация</string>
+    </property>
+    <addaction name="Info"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Oxy">
+   <property name="text">
+    <string>На Oxy</string>
+   </property>
+  </action>
+  <action name="action_Oyz">
+   <property name="text">
+    <string>На Oyz</string>
+   </property>
+  </action>
+  <action name="action_Oxz">
+   <property name="text">
+    <string>На Oxz</string>
+   </property>
+  </action>
+  <action name="action_x">
+   <property name="text">
+    <string>По оси x</string>
+   </property>
+  </action>
+  <action name="action_y">
+   <property name="text">
+    <string>По оси y</string>
+   </property>
+  </action>
+  <action name="action_z">
+   <property name="text">
+    <string>По оси z</string>
+   </property>
+  </action>
+  <action name="scaling">
+   <property name="text">
+    <string>Масштаб</string>
+   </property>
+  </action>
+  <action name="rotating">
+   <property name="text">
+    <string>Поворот</string>
+   </property>
+  </action>
+  <action name="transfering">
+   <property name="text">
+    <string>Перемещение</string>
+   </property>
+  </action>
+  <action name="No_proection">
+   <property name="text">
+    <string>Отключить проекцию</string>
+   </property>
+  </action>
+  <action name="Matrix">
+   <property name="text">
+    <string>Матрица преобразования</string>
+   </property>
+  </action>
+  <action name="Info">
+   <property name="text">
+    <string>Информация</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>letter</class>
+   <extends>QWidget</extends>
+   <header>letter.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
